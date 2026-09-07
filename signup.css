@@ -11,6 +11,7 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: "Quicksand", sans-serif;
+  background-color: black;
 }
 
 .container {
@@ -142,4 +143,5 @@ body {
   border: none;
   border-radius: 15px;
   font-weight: bold;
+  cursor: pointer;
 }
