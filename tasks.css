@@ -46,7 +46,7 @@ body {
   font-weight: bold;
 }
 
-.main-up #add-task {
+.main-up .add-task {
   position: absolute;
   top: 80px;
   left: 300px;
@@ -73,4 +73,40 @@ body {
   font-size: 28px;
   top: 20px;
   left: 60px;
+}
+
+.tasks {
+  position: relative;
+}
+
+.tasks .tasks-list {
+  position: absolute;
+  top: -400px;
+  left: 45px;
+  list-style: none;
+  color: #020b43;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tasks .tasks-list li {
+  font-size: 20px;
+  font-weight: 500;
+  width: 400px;
+  height: 70px;
+  padding: 15px 20px;
+  background-color: #d0d4ef;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.tasks .tasks-list input[type="checkbox"] {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 18px;
 }
