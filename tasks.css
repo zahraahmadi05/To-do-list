@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  background-color: black;
+}
+
+.container {
+  background-color: #5233a6;
+  width: 490px;
+  height: 660px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.main-up {
+  position: relative;
+  height: 28%;
+}
+
+.main-up #backBtn {
+  background-color: #5233a6;
+  border: none;
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.main-up h2 {
+  font-size: 30px;
+  position: absolute;
+  top: 90px;
+  left: 60px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-up #add-task {
+  position: absolute;
+  top: 80px;
+  left: 300px;
+  font-size: 24px;
+  border: none;
+  border-radius: 14px;
+  width: 140px;
+  height: 50px;
+  font-weight: 500;
+}
+
+.main-bottom {
+  position: relative;
+  height: 72%;
+  background-color: #fff;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.main-bottom h2 {
+  position: absolute;
+  font-size: 28px;
+  top: 20px;
+  left: 60px;
+}
