@@ -1,5 +1,10 @@
 const addTask = document.querySelector(".add-task");
 const taskList = document.querySelector(".tasks-list");
+const backBtn = document.querySelector("#backBtn");
+
+backBtn.addEventListener("click", function () {
+  window.location.href = "signup.html";
+});
 
 addTask.addEventListener("click", function () {
   const taskTitle = prompt("Enter your task!");
@@ -15,16 +20,30 @@ addTask.addEventListener("click", function () {
 
   const newTask = document.createElement("li");
 
-  const checkbox = document.createElement("input");
-  checkbox.type = "checkbox";
-
+  // Create task
   const label = document.createElement("span");
   label.textContent = taskTitle;
 
-  newTask.textContent = taskTitle;
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
 
-  newTask.append(checkbox);
+  // Delete button
+  const deleteBtn = document.createElement("button");
+  deleteBtn.classList.add("delete-btn");
+
   newTask.append(label);
-  newTask.append(taskTitle);
+  newTask.append(checkbox);
+  newTask.append(deleteBtn);
+
   taskList.append(newTask);
+
+  // Checked
+  checkbox.addEventListener("change", function () {
+    label.classList.toggle("compeleted", checkbox.checked);
+  });
+
+  // Remove task
+  deleteBtn.addEventListener("click", function () {
+    newTask.remove();
+  });
 });
