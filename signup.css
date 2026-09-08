@@ -22,6 +22,13 @@ body {
   position: relative;
 }
 
+@media (max-width: 640px) {
+  .container {
+    width: 300px;
+    height: 500px;
+  }
+}
+
 .container #backBtn {
   background-color: #ffcdcd;
   border: none;
@@ -32,11 +39,25 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 640px) {
+  .container #backBtn {
+    font-size: 20px;
+    left: 30px;
+  }
+}
+
 .container h1 {
   position: absolute;
   font-size: 32px;
   top: 30px;
   right: 115px;
+}
+
+@media (max-width: 640px) {
+  .container h1 {
+    font-size: 15px;
+    right: 92px;
+  }
 }
 
 .inputs {
@@ -52,6 +73,14 @@ body {
   width: 100px;
 }
 
+@media (max-width: 640px) {
+  .inputs .name {
+    font-size: 12px;
+    top: -170px;
+    right: 150px;
+  }
+}
+
 .inputs #name {
   width: 400px;
   height: 50px;
@@ -64,6 +93,15 @@ body {
   font-size: 20px;
 }
 
+@media (max-width: 640px) {
+  .inputs #name {
+    width: 230px;
+    height: 28px;
+    top: -150px;
+    right: 32px;
+  }
+}
+
 .inputs .email {
   font-size: 20px;
   position: absolute;
@@ -71,6 +109,14 @@ body {
   right: 340px;
   font-weight: bold;
   width: 100px;
+}
+
+@media (max-width: 640px) {
+  .inputs .email {
+    font-size: 12px;
+    top: -100px;
+    right: 150px;
+  }
 }
 
 .inputs #email {
@@ -85,6 +131,15 @@ body {
   font-size: 20px;
 }
 
+@media (max-width: 640px) {
+  .inputs #email {
+    width: 230px;
+    height: 28px;
+    top: -80px;
+    right: 32px;
+  }
+}
+
 .inputs .password {
   font-size: 20px;
   position: absolute;
@@ -92,6 +147,14 @@ body {
   right: 340px;
   font-weight: bold;
   width: 100px;
+}
+
+@media (max-width: 640px) {
+  .inputs .password {
+    font-size: 12px;
+    top: -28px;
+    right: 150px;
+  }
 }
 
 .inputs #password {
@@ -106,6 +169,15 @@ body {
   font-size: 22px;
 }
 
+@media (max-width: 640px) {
+  .inputs #password {
+    width: 230px;
+    height: 28px;
+    top: -8px;
+    right: 32px;
+  }
+}
+
 .inputs .conf-psword {
   font-size: 20px;
   position: absolute;
@@ -113,6 +185,14 @@ body {
   right: 240px;
   font-weight: bold;
   width: 200px;
+}
+
+@media (max-width: 640px) {
+  .inputs .conf-psword {
+    font-size: 12px;
+    top: 44px;
+    right: 52px;
+  }
 }
 
 .inputs #pssword {
@@ -125,6 +205,15 @@ body {
   border: none;
   text-align: center;
   font-size: 22px;
+}
+
+@media (max-width: 640px) {
+  .inputs #pssword {
+    width: 230px;
+    height: 28px;
+    top: 64px;
+    right: 32px;
+  }
 }
 
 .signup {
@@ -144,4 +233,15 @@ body {
   border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .signup #signupBtn {
+    font-size: 18px;
+    width: 140px;
+    height: 32px;
+    top: 140px;
+    right: 78px;
+    border-radius: 10px;
+  }
 }
