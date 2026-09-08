@@ -35,4 +35,6 @@
 
 ![Task Page](imgs/tasks.png)
 
-MIT LICENCE
+# LICENCE
+
+MIT
