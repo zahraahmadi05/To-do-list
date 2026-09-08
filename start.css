@@ -28,6 +28,15 @@ body {
   color: rgb(75, 1, 1);
 }
 
+@media (max-width: 640px) {
+  .container h1 {
+    font-size: 20px;
+    position: absolute;
+    left: 100px;
+    top: 180px;
+  }
+}
+
 .container .background {
   width: 64%;
   display: block;
@@ -43,6 +52,15 @@ body {
   color: rgb(146, 3, 3);
 }
 
+@media (max-width: 640px) {
+  .container h2 {
+    font-size: 15px;
+    position: absolute;
+    top: 380px;
+    right: 106px;
+  }
+}
+
 .container #startBtn {
   font-size: 28px;
   background-color: #c78a8a;
@@ -55,4 +73,15 @@ body {
   right: 630px;
   top: 570px;
   cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .container #startBtn {
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 420px;
+    right: 136px;
+  }
 }
