@@ -24,6 +24,7 @@
 6. 🚫 Prevent adding empty tasks
 7. 🎨 Custom UI design with CSS
 8. ⚡ Dynamically create and manage tasks with JavaScript
+9. 📱 Responsive Design
 
 # 🛠️ Built With
 
