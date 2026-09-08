@@ -7,7 +7,7 @@ const confPassword = document.querySelector("#pssword");
 const signupBtn = document.querySelector("#signupBtn");
 
 backBtn.addEventListener("click", function () {
-  window.location.href = "start.html";
+  window.location.href = "index.html";
 });
 
 signupBtn.addEventListener("click", function () {
