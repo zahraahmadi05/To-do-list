@@ -21,6 +21,13 @@ body {
   position: relative;
 }
 
+@media (max-width: 640px) {
+  .container {
+    width: 340px;
+    height: 540px;
+  }
+}
+
 .main-up {
   position: relative;
   height: 28%;
@@ -37,6 +44,14 @@ body {
   color: #fff;
 }
 
+@media (max-width: 640px) {
+  .main-up #backBtn {
+    font-size: 20px;
+    left: 30px;
+    top: 12px;
+  }
+}
+
 .main-up h2 {
   font-size: 30px;
   position: absolute;
@@ -44,6 +59,14 @@ body {
   left: 60px;
   color: #fff;
   font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .main-up h2 {
+    font-size: 20px;
+    top: 70px;
+    left: 40px;
+  }
 }
 
 .main-up .add-task {
@@ -59,6 +82,16 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 640px) {
+  .main-up .add-task {
+    left: 220px;
+    top: 70px;
+    width: 90px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
 .main-bottom {
   position: relative;
   height: 72%;
@@ -68,11 +101,25 @@ body {
   border-bottom-right-radius: 10px;
 }
 
+@media (max-width: 640px) {
+  .main-bottom {
+    border-top-left-radius: 60px;
+  }
+}
+
 .main-bottom h2 {
   position: absolute;
   font-size: 28px;
   top: 20px;
   left: 60px;
+}
+
+@media (max-width: 640px) {
+  .main-bottom h2 {
+    font-size: 20px;
+    left: 40px;
+    top: 10px;
+  }
 }
 
 .tasks {
@@ -92,6 +139,14 @@ body {
   gap: 24px;
 }
 
+@media (max-width: 640px) {
+  .tasks .tasks-list {
+    gap: 20px;
+    left: 30px;
+    top: -340px;
+  }
+}
+
 .tasks .tasks-list li {
   position: relative;
   font-size: 22px;
@@ -104,12 +159,29 @@ body {
   box-sizing: border-box;
 }
 
+@media (max-width: 640px) {
+  .tasks .tasks-list li {
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+  }
+}
+
 .tasks .tasks-list input[type="checkbox"] {
   width: 30px;
   height: 30px;
   position: absolute;
   right: 58px;
   top: 18px;
+}
+
+@media (max-width: 640px) {
+  .tasks .tasks-list input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    right: 50px;
+    top: 14px;
+  }
 }
 
 .tasks .tasks-list .compeleted {
@@ -128,4 +200,12 @@ body {
   border-color: red;
   box-shadow: 0 10px 12px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
+}
+
+@media (max-width: 640px){
+  .tasks .tasks-list .delete-btn{
+    width: 25px;
+    height: 24px;
+    top: 13px;
+  }
 }
