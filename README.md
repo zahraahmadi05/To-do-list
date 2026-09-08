@@ -1,10 +1,10 @@
 # To-Do List
 
-## To-Do List is a responsive management web application built with HTML, CSS, JavsScript.
+## To-Do List is a responsive task management web application built with HTML, CSS, and JavaScript.
 
-## Users can dynamically add, complete and delete tasks, with a miximum limit of four active tasks. The project focuses on DOM manipulation, event handling, dynamic element creation, and interactive UI development.
+## Users can dynamically add, complete, and delete tasks, with a maximum limit of four active tasks. The project focuses on DOM manipulation, event handling, dynamic element creation, and interactive UI development.
 
-## In the JavaScript section, tasks are created dynamically in the DOM. This means that whenever a new task is added, its required elements, such as the 'li', text, checkbox, and delete button, are creating using JavaScript.
+## In the JavaScript section, tasks are created dynamically in the DOM. This means that whenever a new task is added, its required elements, such as the li, text, checkbox, and delete button, are created using JavaScript.
 
 # 🎯 Purpose
 
@@ -31,10 +31,10 @@
 - CSS3
 - JavaScript
 
-# Screenshot
+# 📸 Screenshot
 
 ![Task Page](imgs/tasks.png)
 
-# LICENCE
+# 📄 LICENCE
 
 MIT
