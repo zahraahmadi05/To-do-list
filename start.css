@@ -31,7 +31,6 @@ body {
 @media (max-width: 640px) {
   .container h1 {
     font-size: 20px;
-    position: absolute;
     left: 100px;
     top: 180px;
   }
@@ -55,7 +54,6 @@ body {
 @media (max-width: 640px) {
   .container h2 {
     font-size: 15px;
-    position: absolute;
     top: 380px;
     right: 106px;
   }
@@ -80,7 +78,6 @@ body {
     font-size: 14px;
     width: 100px;
     height: 30px;
-    position: absolute;
     top: 420px;
     right: 136px;
   }
