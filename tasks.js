@@ -1,13 +1,16 @@
-const addTask = document.querySelector(".add-task");
-const taskList = document.querySelector(".tasks-list");
 const backBtn = document.querySelector("#backBtn");
+const addTask = document.querySelector(".add-task");
+const taskInput = document.querySelector("#tasks-input");
+const taskList = document.querySelector(".tasks-list");
 
 backBtn.addEventListener("click", function () {
   window.location.href = "signup.html";
 });
 
 addTask.addEventListener("click", function () {
-  const taskTitle = prompt("Enter your task!");
+  taskInput.style.display = "block";
+
+  taskInput.focus();
 
   if (taskList.children.length >= 4) {
     alert("You can only add 4 tasks 🙂");
