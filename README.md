@@ -25,6 +25,8 @@
 7. 🎨 Custom UI design with CSS
 8. ⚡ Dynamically create and manage tasks with JavaScript
 9. 📱 Responsive Design
+10. 💾 Save tasks to Local Storage
+11. 🔄 Keep tasks saved after page refresh
 
 # 🛠️ Built With
 
