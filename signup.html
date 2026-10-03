@@ -5,28 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do</title>
     <link rel="icon" href="imgs/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="signup.css" />
   </head>
   <body>
-    <div class="container">
-      <button id="backBtn">←</button>
-      <h1>Let’s get started!</h1>
-    </div>
+    <main class="container">
+      <header class="top">
+        <button type="button" id="backBtn" aria-label="Back">←</button>
+        <h1>Let’s get started!</h1>
+      </header>
 
-    <div class="inputs">
-      <p class="name">Full Name</p>
-      <input type="text" id="name" />
-      <p class="email">Email</p>
-      <input type="email" id="email" />
-      <p class="password">Password</p>
-      <input type="password" id="password" />
-      <p class="conf-psword">Cofirm Password</p>
-      <input type="password" id="pssword" />
-    </div>
+      <form class="inputs" id="signupform">
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" />
+        </div>
 
-    <div class="signup">
-      <button id="signupBtn">Sign up</button>
-    </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+        </div>
+
+        <div class="field">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" />
+        </div>
+
+        <button type="submit" id="signupBtn">Sign up</button>
+      </form>
+    </main>
+
+    <script src="signup.js"></script>
   </body>
-  <script src="signup.js"></script>
 </html>
