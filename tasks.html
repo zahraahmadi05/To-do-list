@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do</title>
     <link rel="icon" href="imgs/logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="tasks.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="main-up">
-        <button id="backBtn">←</button>
-        <h2>Today</h2>
-        <button class="add-task">Add New</button>
-        <input type="text" id="tasks-input" placeholder="Enter your task" />
-      </div>
+    <main class="container">
+      <header class="main-up">
+        <button type="button" id="backBtn">←</button>
+        <div class="title-row">
+          <h2>Today</h2>
+          <button type="button" class="add-task">Add New</button>
+        </div>
+      </header>
 
-      <div class="main-bottom">
+      <input type="text" id="tasks-input" placeholder="Enter your task" />
+
+      <section class="main-bottom">
         <h2>My Tasks</h2>
-      </div>
 
-      <div class="tasks">
-        <ul class="tasks-list"></ul>
-      </div>
-    </div>
+        <div class="tasks">
+          <ul class="tasks-list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="tasks.js"></script>
   </body>
-  <script src="tasks.js"></script>
 </html>
