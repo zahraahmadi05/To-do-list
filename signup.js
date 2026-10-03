@@ -8,10 +8,12 @@ const confPassword = document.querySelector("#confirmPassword");
 
 const userName = localStorage.getItem("userName");
 
+// Back button
 backBtn.addEventListener("click", function () {
   window.location.href = "index.html";
 });
 
+// Submit
 signup.addEventListener("submit", function (e) {
   e.preventDefault();
 
