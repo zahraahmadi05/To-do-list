@@ -8,77 +8,88 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   font-family: "Quicksand", sans-serif;
   background-color: black;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: min(92%, 440px);
+  container-type: inline-size;
 }
 
-.container h1 {
-  font-size: 40px;
-  position: absolute;
-  left: 550px;
-  top: 80px;
-  color: rgb(75, 1, 1);
-}
-
-@media (max-width: 640px) {
-  .container h1 {
-    font-size: 20px;
-    left: 100px;
-    top: 180px;
-  }
-}
-
-.container .background {
-  width: 64%;
+.background {
   display: block;
-  margin: 0 auto;
+  width: 100%;
   border-radius: 15px;
 }
 
-.container h2 {
-  font-size: 32px;
+.content {
   position: absolute;
-  right: 564px;
-  top: 480px;
-  color: rgb(146, 3, 3);
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 11% 9% 9%;
 }
 
-@media (max-width: 640px) {
-  .container h2 {
-    font-size: 15px;
-    top: 380px;
-    right: 106px;
-  }
+.content h1 {
+  font-size: 40px;
+  color: rgb(75, 1, 1);
+  align-self: flex-start;
 }
 
-.container #startBtn {
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.bottom h2 {
+  font-size: 34px;
+  color: rgb(122, 4, 4);
+  text-align: center;
+}
+
+.bottom #startBtn {
+  font-family: inherit;
+  font-weight: 600;
   font-size: 28px;
+  width: 60%;
+  padding: 12px;
   background-color: #c78a8a;
-  border: none;
-  width: 200px;
-  height: 60px;
-  border-radius: 25px;
   color: #fff;
-  position: absolute;
-  right: 630px;
-  top: 570px;
+  border: none;
+  border-radius: 12px;
   cursor: pointer;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.bottom #startBtn:hover {
+  background-color: #b57474;
+  transform: scale(1.05);
 }
 
 @media (max-width: 640px) {
-  .container #startBtn {
+  .container {
+    width: 92%;
+  }
+  .content h1 {
+    font-size: 20px;
+  }
+  .bottom {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .bottom h2 {
+    font-size: 20px;
+  }
+  .bottom #startBtn {
     font-size: 14px;
-    width: 100px;
-    height: 30px;
-    top: 420px;
-    right: 136px;
+    width: 40%;
   }
 }
