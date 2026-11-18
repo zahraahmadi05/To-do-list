@@ -28,7 +28,7 @@ signup.addEventListener("submit", function (e) {
   }
 
   if (passwordValue !== confPasswordValue) {
-    alert("Password do not match! ❗");
+    alert("Password do not match❗");
     return;
   }
 
